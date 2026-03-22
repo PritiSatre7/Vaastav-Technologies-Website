@@ -26,6 +26,26 @@ body {
     padding: 0;
 }
 
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#hero {
+    background: #f7f7f7;
+    padding: 100px 20px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
 
 @keyframes zoomFade {
     0% {
