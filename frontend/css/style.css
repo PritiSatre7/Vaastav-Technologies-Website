@@ -156,7 +156,106 @@ section {
         opacity: 0;
     }
 }
+/* CONTACT SECTION */
+.contact-section {
+    padding: 100px 20px;
+    text-align: center;
+}
 
+/* HEADING */
+.contact-section h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: gray;
+    margin-bottom: 40px;
+}
+
+/* MAIN LAYOUT */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;   /* 🔥 ye missing tha */
+    width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* BUTTON */
+.contact-form button {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #0056b3;
+}
+
+/* INFO BOX */
+.contact-info {
+    max-width: 300px;
+    text-align: left;
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background: #f1f1f1;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+/* COLORS */
+.fa-linkedin:hover { color: #0077b5; }
+.fa-github:hover { color: black; }
+.fa-instagram:hover { color: #e1306c; }
 
 #main-content {
     display: none;
