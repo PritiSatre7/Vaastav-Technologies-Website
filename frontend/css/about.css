@@ -150,3 +150,28 @@ body {
 .team-member p {
     text-align: center; /* keep team info centered */
 }
+
+
+@media(max-width:1024px){
+    .about-section, .team-member { 
+        width: 90%; 
+        margin: 0 auto 40px auto; 
+    }
+}
+
+@media(max-width:768px){
+    .team-container { 
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .top-header { 
+        justify-content: flex-start; 
+        padding-left: 20px; 
+    }
+}
+
+@media(max-width:480px){
+    .main-heading { font-size:28px; }
+    .section-heading { font-size:24px; }
+    .team-member { width:90%; }
+}
