@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Vaastav</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome (icons ke liye) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="logo-text">Vaastav</div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Contact Section -->
+<section class="contact-section">
+
+    <h1>Let’s Build Something Together 🚀</h1>
+    <p class="subtitle">
+        Have a project idea or any questions? Feel free to reach out to us.
+    </p>
+
+    <div class="contact-container">
+
+        <!-- Contact Form -->
+        <form class="contact-form" onsubmit="showMessage(event)">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Subject">
+            <textarea placeholder="Your Message..." rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+
+            <p>📧 contactceo@vaastav.tech</p>
+            <p>📍 Lohegaon, Pune</p>
+
+            <!-- Social Links (UPDATED) -->
+            <div class="social-links">
+                <p>Connect with us:</p>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/company/vaastav-tech/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://github.com/Vaastav-Technologies" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/tech.vaastav" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="note">We usually respond within 24–48 hours.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
