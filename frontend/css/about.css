@@ -43,3 +43,14 @@ body {
     width: 100%;
 }
 
+
+.section-heading {
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto 18px auto;
+    font-size: 28px;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+    color: #1a1a1a;
+}
+
