@@ -79,5 +79,74 @@ body {
 .about-section p {
     font-size: 16px;
     color: #555;
+    text-align: justify; 
 }
 
+
+.team-section {
+    background: #fff;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    transition: 0.3s;
+    text-align: center;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-member {
+    background: #fff;
+    border-radius: 12px;
+    text-align: center;
+    width: 250px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px auto 15px auto;
+    border: 3px solid #007BFF;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.team-member p, .team-member a {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.team-member a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.team-member a:hover {
+    text-decoration: underline;
+}
+
+.team-member p {
+    text-align: center; /* keep team info centered */
+}
