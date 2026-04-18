@@ -5,16 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Careers - Vaastav</title>
 
-    <!-- Common CSS -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Careers CSS -->
     <link rel="stylesheet" href="css/careers.css">
 </head>
 
 <body>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
 <nav class="navbar">
     <div class="navbar-logo">Vaastav</div>
 
@@ -26,41 +23,99 @@
     </ul>
 </nav>
 
-<!-- Careers Section -->
 <section class="careers">
 
     <h1>Join Our Team 🚀</h1>
-    <p class="subtitle">Explore job and internship opportunities at Vaastav Technologies.</p>
 
-    <!-- Job List -->
+    <!-- JOB CARDS -->
     <div class="job-list">
-        <div class="job-card">Frontend Developer</div>
-        <div class="job-card">Backend Developer</div>
-        <div class="job-card">Software Engineer</div>
-        <div class="job-card">Security Engineer</div>
-        <div class="job-card">Internships</div>
+
+        <div class="job-card" onclick="selectRole('Frontend Developer', this)">
+            <h3>Frontend Developer</h3>
+            <p>Build responsive UI</p>
+            <ul class="skills">
+                <li>HTML, CSS, JavaScript</li>
+                <li>React (basic)</li>
+                <li>Responsive Design</li>
+            </ul>
+        </div>
+
+        <div class="job-card" onclick="selectRole('Backend Developer', this)">
+            <h3>Backend Developer</h3>
+            <p>Develop APIs</p>
+            <ul class="skills">
+                <li>Node.js / Java / Python</li>
+                <li>Database</li>
+                <li>API Development</li>
+            </ul>
+        </div>
+
+        <div class="job-card" onclick="selectRole('Software Engineer', this)">
+            <h3>Software Engineer</h3>
+            <p>Build scalable systems</p>
+            <ul class="skills">
+                <li>DSA</li>
+                <li>OOP</li>
+                <li>Problem Solving</li>
+            </ul>
+        </div>
+
+        <div class="job-card" onclick="selectRole('Security Engineer', this)">
+            <h3>Security Engineer</h3>
+            <p>Ensure security</p>
+            <ul class="skills">
+                <li>Cyber Security</li>
+                <li>Network Security</li>
+                <li>Pen Testing</li>
+            </ul>
+        </div>
+
+        <div class="job-card" onclick="selectRole('Internship', this)">
+            <h3>Internships</h3>
+            <p>Start your career</p>
+            <ul class="skills">
+                <li>Basic Programming</li>
+                <li>Learning</li>
+                <li>Teamwork</li>
+            </ul>
+        </div>
+
     </div>
 
-    <!-- Application Form -->
+    <!-- APPLICATION FORM -->
     <div class="application-form">
         <h2>Apply Now</h2>
 
         <form onsubmit="applyJob(event)">
+
+            <!-- POSITION -->
+            <select id="role" required>
+                <option value="">Select Position</option>
+                <option>Frontend Developer</option>
+                <option>Backend Developer</option>
+                <option>Software Engineer</option>
+                <option>Security Engineer</option>
+                <option>Internship</option>
+            </select>
+
             <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
+            <input type="email" placeholder="Email" required>
 
-            <!-- Resume Upload -->
-            <input type="file" required>
+            <!-- RESUME -->
+            <label class="file-label">Upload Resume (PDF only)</label>
+            <input type="file" id="resume" accept=".pdf" required>
 
-            <textarea placeholder="Your Message..." rows="4"></textarea>
+            <textarea placeholder="Message"></textarea>
 
-            <button type="submit">Submit Application</button>
+            <button type="submit">Submit</button>
+
         </form>
     </div>
 
 </section>
 
 <script src="js/script.js"></script>
+<script src="js/careers.js"></script>
 
 </body>
 </html>
