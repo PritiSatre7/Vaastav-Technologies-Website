@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Vaastav</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Careers CSS -->
+    <link rel="stylesheet" href="css/careers.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-logo">Vaastav</div>
+
+    <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html" class="active">Careers</a></li>
+    </ul>
+</nav>
+
+<!-- Careers Section -->
+<section class="careers">
+
+    <h1>Join Our Team 🚀</h1>
+    <p class="subtitle">Explore job and internship opportunities at Vaastav Technologies.</p>
+
+    <!-- Job List -->
+    <div class="job-list">
+        <div class="job-card">Frontend Developer</div>
+        <div class="job-card">Backend Developer</div>
+        <div class="job-card">Software Engineer</div>
+        <div class="job-card">Security Engineer</div>
+        <div class="job-card">Internships</div>
+    </div>
+
+    <!-- Application Form -->
+    <div class="application-form">
+        <h2>Apply Now</h2>
+
+        <form onsubmit="applyJob(event)">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+
+            <!-- Resume Upload -->
+            <input type="file" required>
+
+            <textarea placeholder="Your Message..." rows="4"></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
